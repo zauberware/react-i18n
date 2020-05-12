@@ -9,6 +9,11 @@ npm i @zwt/react-i18n --save
 yarn add @zwt/react-i18n
 ```
 
+## Create Project
+
+Create Project at lokalise.com.
+Copy token and project id to your .env file. Go to personal profile to grap token and to project settings to grap project id.
+
 ## .env
 
 Configure and put these env variables to your .env file.
@@ -48,16 +53,11 @@ REACT_APP_SRC_INPUT=./src/\*\*/\_.js
 Put these scripts into your root package.json
 
 ```
-"locales-push": "npm explore zwt-react-i18n -- npm run locales-push --env=$PWD",
-"locales-parse": "npm explore zwt-react-i18n -- npm run locales-parse --env=$PWD",
-"locales-push-files": "npm explore zwt-react-i18n -- npm run locales-push-files --env=$PWD",
-"locales-pull-files": "npm explore zwt-react-i18n -- npm run locales-pull-files --env=$PWD"
+"locales-push": "npm explore @zwt/react-i18n -- npm run locales-push --env=$PWD",
+"locales-parse": "npm explore @zwt/react-i18n -- npm run locales-parse --env=$PWD",
+"locales-push-files": "npm explore @zwt/react-i18n -- npm run locales-push-files --env=$PWD",
+"locales-pull-files": "npm explore @zwt/react-i18n -- npm run locales-pull-files --env=$PWD"
 ```
-
-## Create Project
-
-Create Project at lokalise.com.
-Copy token and project id to your .env file. Go to personal profile to grap token and to project settings to grap project id.
 
 ### Develop your app!
 
