@@ -92,7 +92,7 @@ import i18n, { useTranslation } from "zwt-react-i18n/mobile";
 Based on the env variable "REACT_APP_LOCALES", it will create the locales you want to use for your project. You can re-run this command if you want to add locales.
 
 ```
-npm run push-locales
+npm run locales-push
 ```
 
 ### Use branches [optional]
@@ -112,7 +112,7 @@ These files be used to push/cleanup keys.
 The format of these JSON files is structured. Parser will collect keys, validation limits etc.
 
 ```
-npm run parse
+npm run locales-parse
 ```
 
 ### Push translation keys
@@ -120,7 +120,7 @@ npm run parse
 Push translations keys/files from "REACT_APP_PARSED_LOCALES_OUTPUT".
 
 ```
-npm run push-files
+npm run locales-push-files
 ```
 
 Go to your lokalise project and check whether the upload was successful.
@@ -133,7 +133,7 @@ These files will be put into the build as fallback JSON files.
 The format of these JSON files is flat (key: value).
 
 ```
-npm run pull-files
+npm run locales-pull-files
 ```
 
 ### S3 Bucket sync
@@ -157,6 +157,6 @@ Create Translator User + Translator Role, which limitted permissions. Can only e
 
 ### Cleanup keys
 
-Generate keys `npm run parse`.
+Generate keys `npm run locales-parse`.
 
-`npm run push-files --cleanup=true` will remove all remote keys which do not exist anymore
+`npm run locales-push-files --cleanup=true` will remove all remote keys which do not exist anymore
