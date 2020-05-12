@@ -2,6 +2,13 @@
 
 - Install Lokalise (https://github.com/lokalise/lokalise-cli-2-go)
 
+## Install
+
+```
+npm i @zwt/react-i18n --save
+yarn add @zwt/react-i18n
+```
+
 ## .env
 
 Configure and put these env variables to your .env file.
