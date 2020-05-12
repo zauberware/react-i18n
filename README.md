@@ -48,10 +48,10 @@ REACT_APP_SRC_INPUT=./src/\*\*/\_.js
 Put these scripts into your root package.json
 
 ```
-"push-locales": "npm explore zwt-react-i18n -- npm run push-locales --env=$PWD",
-"parse": "npm explore zwt-react-i18n -- npm run parse --env=$PWD",
-"push-files": "npm explore zwt-react-i18n -- npm run push-files --env=$PWD",
-"pull-files": "npm explore zwt-react-i18n -- npm run pull-files --env=$PWD"
+"locales-push": "npm explore zwt-react-i18n -- npm run locales-push --env=$PWD",
+"locales-parse": "npm explore zwt-react-i18n -- npm run locales-parse --env=$PWD",
+"locales-push-files": "npm explore zwt-react-i18n -- npm run locales-push-files --env=$PWD",
+"locales-pull-files": "npm explore zwt-react-i18n -- npm run locales-pull-files --env=$PWD"
 ```
 
 ## Create Project
