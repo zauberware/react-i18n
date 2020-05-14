@@ -8,7 +8,7 @@ require("dotenv").config({
 });
 
 process.chdir(process.env.npm_config_env);
-const OUTPUT_FOLDER = process.env.REACT_APP_PUBLIC_LOCALES_OUTPUT;
+const OUTPUT_FOLDER = process.env.REACT_APP_LOCALES_BUILD_PATH;
 const DEFAULT_LOCALE = process.env.REACT_APP_DEFAULT_LOCALE;
 const LOCALES = JSON.parse(process.env.REACT_APP_LOCALES);
 

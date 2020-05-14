@@ -8,7 +8,7 @@ import {
   REACT_APP_LOKALISE_PROJECT_ID,
   REACT_APP_DEFAULT_LOCALE,
   REACT_APP_LOCALES,
-  REACT_APP_PUBLIC_LOCALES_OUTPUT,
+  REACT_APP_LOCALES_BUILD_PATH,
   REACT_APP_S3_BUCKET,
 } from "react-native-dotenv";
 
@@ -21,7 +21,9 @@ const LOCALES = REACT_APP_LOCALES;
 let FALLBACKTRANSLATIONS = {};
 
 try {
-  FALLBACKTRANSLATIONS = require("~/" + REACT_APP_PUBLIC_LOCALES_OUTPUT + "/index.js");
+  FALLBACKTRANSLATIONS = require("~/" +
+    REACT_APP_LOCALES_BUILD_PATH +
+    "/index.js");
 } catch (err) {
   console.log("Cannot load fallback translation files!");
   console.log(err);

@@ -33,7 +33,7 @@ REACT_APP_S3_BUCKET=zwt.locales.test/lokalise
 React
 
 ```
-REACT_APP_PUBLIC_LOCALES_OUTPUT=public/locales
+REACT_APP_LOCALES_BUILD_PATH=public/locales
 REACT_APP_PARSED_LOCALES_OUTPUT=./.locales
 REACT_APP_ENV=development
 REACT_APP_SRC_INPUT=./src/**/*.js
@@ -43,7 +43,7 @@ React-Native
 
 ```
 REACT_APP_ROOT=root_folder_name (e.g. zwt_rn_base)
-REACT_APP_PUBLIC_LOCALES_OUTPUT=www/locales
+REACT_APP_LOCALES_BUILD_PATH=www/locales
 REACT_APP_PARSED_LOCALES_OUTPUT=.locales
 REACT_APP_SRC_INPUT=./src/\*\*/\_.js
 ```
