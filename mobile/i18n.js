@@ -21,10 +21,7 @@ const LOCALES = REACT_APP_LOCALES;
 let FALLBACKTRANSLATIONS = {};
 
 try {
-  const pth = `../../../../${REACT_APP_PUBLIC_LOCALES_OUTPUT}`;
-  FALLBACKTRANSLATIONS = require(pth);
-  // console.debug('~~~ FALLBACK TRANSLATIONS ~~~');
-  // console.debug(FALLBACKTRANSLATIONS);
+  FALLBACKTRANSLATIONS = require("~/" + REACT_APP_PUBLIC_LOCALES_OUTPUT + "/index.js");
 } catch (err) {
   console.log("Cannot load fallback translation files!");
   console.log(err);
