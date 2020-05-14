@@ -34,7 +34,7 @@ React
 
 ```
 REACT_APP_LOCALES_BUILD_PATH=public/locales
-REACT_APP_PARSED_LOCALES_OUTPUT=./.locales
+REACT_APP_LOCALES_PUSH_PATH=./.locales
 REACT_APP_ENV=development
 REACT_APP_SRC_INPUT=./src/**/*.js
 ```
@@ -44,7 +44,7 @@ React-Native
 ```
 REACT_APP_ROOT=root_folder_name (e.g. zwt_rn_base)
 REACT_APP_LOCALES_BUILD_PATH=www/locales
-REACT_APP_PARSED_LOCALES_OUTPUT=.locales
+REACT_APP_LOCALES_PUSH_PATH=.locales
 REACT_APP_SRC_INPUT=./src/\*\*/\_.js
 ```
 
@@ -107,7 +107,7 @@ All package.json commands need to add `--branch=staging` to tell Lokalise which 
 ### Parse translation keys
 
 Will create parsed files to upload/compare with Lokalise.
-You can configure where the parser should create the files with "REACT_APP_PARSED_LOCALES_OUTPUT".
+You can configure where the parser should create the files with "REACT_APP_LOCALES_PUSH_PATH".
 These files be used to push/cleanup keys.
 The format of these JSON files is structured. Parser will collect keys, validation limits etc.
 
@@ -117,7 +117,7 @@ npm run locales-parse
 
 ### Push translation keys
 
-Push translations keys/files from "REACT_APP_PARSED_LOCALES_OUTPUT".
+Push translations keys/files from "REACT_APP_LOCALES_PUSH_PATH".
 
 ```
 npm run locales-push-files

@@ -3,7 +3,7 @@ require("dotenv").config({
 });
 
 const LOCALES = JSON.parse(process.env.REACT_APP_LOCALES);
-const LOCALES_OUTPUT = process.env.REACT_APP_PARSED_LOCALES_OUTPUT;
+const LOCALES_OUTPUT = process.env.REACT_APP_LOCALES_PUSH_PATH;
 const REACT_APP_SRC_INPUT = process.env.REACT_APP_SRC_INPUT;
 
 process.chdir(process.env.npm_config_env);

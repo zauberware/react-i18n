@@ -7,7 +7,7 @@ process.chdir(process.env.npm_config_env);
 
 const AT = process.env.REACT_APP_LOKALISE_TOKEN;
 const PID = process.env.REACT_APP_LOKALISE_PROJECT_ID;
-const FOLDER = process.env.REACT_APP_PARSED_LOCALES_OUTPUT;
+const FOLDER = process.env.REACT_APP_LOCALES_PUSH_PATH;
 const LOCALES = JSON.parse(process.env.REACT_APP_LOCALES);
 
 const createFiles = () => {
