@@ -4,11 +4,11 @@
   "description": "",
   "main": "lib/",
   "scripts": {
-    "locales-parse": "i18next --config i18next-parser.config.js && npm run after:pull",
+    "locales-parse": "i18next --config i18next-parser.config.js",
     "after:pull": "node scripts/post-pull.js",
     "locales-push": "node scripts/push-locales.js",
     "locales-push-files": "node scripts/push-files.js",
-    "locales-pull-files": "node scripts/pull-files.js"
+    "locales-pull-files": "node scripts/pull-files.js && npm run after:pull"
   },
   "author": "",
   "license": "ISC",

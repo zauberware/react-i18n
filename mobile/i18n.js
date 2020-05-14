@@ -8,8 +8,7 @@ import {
   REACT_APP_LOKALISE_PROJECT_ID,
   REACT_APP_DEFAULT_LOCALE,
   REACT_APP_LOCALES,
-  REACT_APP_LOCALES_OUTPUT,
-  REACT_APP_ROOT,
+  REACT_APP_PUBLIC_LOCALES_OUTPUT,
   REACT_APP_S3_BUCKET,
 } from "react-native-dotenv";
 
@@ -22,7 +21,10 @@ const LOCALES = REACT_APP_LOCALES;
 let FALLBACKTRANSLATIONS = {};
 
 try {
-  FALLBACKTRANSLATIONS = require(`${REACT_APP_ROOT}/${REACT_APP_LOCALES_OUTPUT}`);
+  const pth = `../../../../${REACT_APP_PUBLIC_LOCALES_OUTPUT}`;
+  FALLBACKTRANSLATIONS = require(pth);
+  // console.debug('~~~ FALLBACK TRANSLATIONS ~~~');
+  // console.debug(FALLBACKTRANSLATIONS);
 } catch (err) {
   console.log("Cannot load fallback translation files!");
   console.log(err);
@@ -62,9 +64,6 @@ i18n
             const language = pathArray[2];
             const ns = pathArray[3].replace(".json", "");
             const parsed = FALLBACKTRANSLATIONS[language][ns].default;
-            Object.keys(parsed).forEach((key) => {
-              parsed[key] = parsed[key].message;
-            });
             return parsed;
           },
         },
