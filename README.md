@@ -11,7 +11,7 @@ yarn add @zwt/react-i18n
 
 ## Create Project
 
-Create Project at lokalise.com.
+Create Project at https://lokalise.com.
 Copy token and project id to your .env file. Go to personal profile to grap token and to project settings to grap project id.
 
 ## .env
