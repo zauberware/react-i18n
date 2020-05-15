@@ -34,4 +34,4 @@ const createLocales = () => {
     }, Promise.resolve());
 };
 
-return createLocales();
+createLocales();

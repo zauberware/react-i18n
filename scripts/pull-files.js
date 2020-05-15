@@ -39,4 +39,4 @@ const syncFiles = () => {
     }, Promise.resolve());
 };
 
-return syncFiles();
+syncFiles();

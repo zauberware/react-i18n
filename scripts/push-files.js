@@ -36,4 +36,4 @@ const createFiles = () => {
     }, Promise.resolve());
 };
 
-return createFiles();
+createFiles();

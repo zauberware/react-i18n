@@ -11,6 +11,8 @@
         "locales-push-files": "node scripts/push-files.js",
         "locales-pull-files": "node scripts/pull-files.js && npm run after:pull",
         "lint": "eslint ./**/*.js --quiet",
+        "fix:lint": "eslint --fix \"**/*.js\"",
+        "check:prettier": "prettier --check \"**/*.js\"",
         "fix:prettier": "prettier --write \"**/*.js\""
     },
     "author": "",
@@ -26,6 +28,6 @@
     },
     "devDependencies": {
         "eslint": "^7.0.0",
-        "@zauberware/eslint-config": "^0.1.1"
+        "@zauberware/eslint-config": "^0.1.3"
     }
 }
