@@ -10,7 +10,8 @@
         "locales-push": "node scripts/push-locales.js",
         "locales-push-files": "node scripts/push-files.js",
         "locales-pull-files": "node scripts/pull-files.js && npm run after:pull",
-        "lint": "eslint ./*.js"
+        "lint": "eslint ./**/*.js --quiet",
+        "fix:prettier": "prettier --write \"**/*.js\""
     },
     "author": "",
     "license": "ISC",
