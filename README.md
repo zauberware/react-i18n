@@ -1,12 +1,12 @@
 ## Requirements
 
-- Install Lokalise (https://github.com/lokalise/lokalise-cli-2-go)
+Install Lokalise (https://github.com/lokalise/lokalise-cli-2-go)
 
 ## Install
 
 ```
-npm i @zwt/react-i18n --save
-yarn add @zwt/react-i18n
+npm i @zauberware/react-i18n --save
+yarn add @zauberware/react-i18n
 ```
 
 ## Create Project
@@ -53,10 +53,10 @@ REACT_APP_SRC_INPUT=./src/\*\*/\_.js
 Put these scripts into your root package.json
 
 ```
-"locales-push": "npm explore @zwt/react-i18n -- npm run locales-push --env=$PWD",
-"locales-parse": "npm explore @zwt/react-i18n -- npm run locales-parse --env=$PWD",
-"locales-push-files": "npm explore @zwt/react-i18n -- npm run locales-push-files --env=$PWD",
-"locales-pull-files": "npm explore @zwt/react-i18n -- npm run locales-pull-files --env=$PWD"
+"locales-push": "npm explore @zauberware/react-i18n -- npm run locales-push --env=$PWD",
+"locales-parse": "npm explore @zauberware/react-i18n -- npm run locales-parse --env=$PWD",
+"locales-push-files": "npm explore @zauberware/react-i18n -- npm run locales-push-files --env=$PWD",
+"locales-pull-files": "npm explore @zauberware/react-i18n -- npm run locales-pull-files --env=$PWD"
 ```
 
 ### Develop your app!
