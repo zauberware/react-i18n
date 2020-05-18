@@ -77,6 +77,14 @@ const { t } = useTranslation("app", { useSuspense: true });
 {t('key', {maxLength: 150})}
 ```
 
+If you want to use multiple namespaces within the same component, make sure to provide all of them when initializing **t**
+
+```
+const { t } = useTranslation(["app", "common"], { useSuspense: true });
+```
+
+Be aware, that only the first namespace in the array is considered default, hence in the given example keys from the namespace 'app' will work even without writing *'app:'* in front of the key, but keys from namespaces other than the first (in our example common) require you to give the corresponding namespace as prefix, like *'common:\[key\]'*
+
 ### React Native
 
 ```
