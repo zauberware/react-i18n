@@ -21,8 +21,8 @@
         "dotenv": "^8.2.0",
         "i18next": "^19.4.4",
         "i18next-chained-backend": "^2.0.1",
+        "i18next-http-backend": "^1.0.11",
         "i18next-parser": "^1.0.6",
-        "i18next-xhr-backend": "^3.2.2",
         "react-i18next": "^11.4.0",
         "react-native-dotenv": "^0.2.0"
     },

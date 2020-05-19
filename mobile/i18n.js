@@ -1,7 +1,7 @@
 import i18n from 'i18next';
 import { initReactI18next, useTranslation } from 'react-i18next';
 import Backend from 'i18next-chained-backend';
-import xhrbackend from 'i18next-xhr-backend';
+import HttpApi from 'i18next-http-backend';
 import {
     REACT_APP_BRANCHES,
     REACT_APP_ENV,
@@ -37,7 +37,7 @@ i18n.use(Backend)
         ns: [],
         defaultNS: 'app',
         backend: {
-            backends: [xhrbackend, xhrbackend],
+            backends: [HttpApi, HttpApi],
             backendOptions: [
                 {
                     loadPath: `https://s3.eu-central-1.amazonaws.com/${S3_BUCKET}/${PROJECT_ID}${ENV}{{lng}}/{{ns}}.json`,
