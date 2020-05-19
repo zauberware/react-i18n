@@ -1,7 +1,7 @@
 import i18n from 'i18next';
 import { initReactI18next, useTranslation } from 'react-i18next';
 import Backend from 'i18next-chained-backend';
-import xhrbackend from 'i18next-xhr-backend';
+import HttpApi from 'i18next-http-backend';
 const { join } = require('path');
 let ENV = '/';
 
@@ -25,7 +25,7 @@ i18n.use(Backend)
         // NOTE: Keep Empty. Namespaces will be identified + downloaed automatically
         ns: [],
         backend: {
-            backends: [xhrbackend, xhrbackend],
+            backends: [HttpApi, HttpApi],
             backendOptions: [
                 {
                     loadPath: `https://s3.eu-central-1.amazonaws.com/${S3_BUCKET}/${PROJECT_ID}${ENV}{{lng}}/{{ns}}.json`,
