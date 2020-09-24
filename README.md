@@ -70,7 +70,7 @@ import React, { Suspense } from "react";
 ```
 
 ```
-import i18n, { useTranslation } from "zwt-react-i18n/web";
+import i18n, { useTranslation } from "@zauberware/react-i18n/web";
 const { t } = useTranslation("app", { useSuspense: true });
 
 {t('key')}
@@ -80,7 +80,7 @@ const { t } = useTranslation("app", { useSuspense: true });
 ### React Native
 
 ```
-import i18n, { useTranslation } from "zwt-react-i18n/mobile";
+import i18n, { useTranslation } from "@zauberware/react-i18n/mobile";
 ```
 
 ## Flows
