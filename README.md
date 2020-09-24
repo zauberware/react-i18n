@@ -75,6 +75,8 @@ const { t } = useTranslation("app", { useSuspense: true });
 
 {t('key')}
 {t('key', {maxLength: 150})}
+
+{t('key', {defaultValue: 'XYZ'})} // helps coding a lot!
 ```
 
 ### React Native
