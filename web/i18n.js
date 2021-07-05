@@ -1,5 +1,5 @@
 import i18n from 'i18next';
-import { initReactI18next, useTranslation } from 'react-i18next';
+import { initReactI18next, useTranslation, Trans } from 'react-i18next';
 import Backend from 'i18next-chained-backend';
 import xhrbackend from 'i18next-xhr-backend';
 const { join } = require('path');
@@ -71,4 +71,4 @@ i18n.use(Backend)
     });
 
 export default i18n;
-export { useTranslation };
+export { useTranslation, Trans };
