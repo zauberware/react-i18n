@@ -15,6 +15,7 @@ const DEFAULT_LOCALE = process.env.REACT_APP_DEFAULT_LOCALE;
 const S3_BUCKET = process.env.REACT_APP_S3_BUCKET;
 const LOCALES = process.env.REACT_APP_LOCALES;
 const IS_DEVELOPMENT = process.env.REACT_APP_ENV;
+const VERSION = process.env.VERSION || '0.1';
 
 i18n.use(Backend)
     // connect with React
@@ -30,7 +31,7 @@ i18n.use(Backend)
             backendOptions: [
                 {
                     loadPath: S3_BUCKET
-                        ? `https://s3.eu-central-1.amazonaws.com/${S3_BUCKET}/${PROJECT_ID}${ENV}{{lng}}/{{ns}}.json`
+                        ? `https://s3.eu-central-1.amazonaws.com/${S3_BUCKET}/${PROJECT_ID}${ENV}{{lng}}/{{ns}}.json?version=${VERSION}`
                         : undefined,
                     allowMultiLoading: false,
                     parse: function (data) {
@@ -46,7 +47,7 @@ i18n.use(Backend)
                     reloadInterval: false,
                 },
                 {
-                    loadPath: join(__dirname, './locales/{{lng}}/{{ns}}.json'),
+                    loadPath: join(__dirname, `./locales/{{lng}}/{{ns}}.json?version=${VERSION}`),
 
                     parse: function (data) {
                         return JSON.parse(data);
